@@ -5,6 +5,6 @@
 		}
 	],
 	"settings": {
-		"files.autoSave": "afterDelay"
+		"files.autoSave": "off"
 	}
 }
