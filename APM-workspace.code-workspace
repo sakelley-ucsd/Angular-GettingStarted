@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "APM"
+		}
+	],
+	"settings": {
+		"files.autoSave": "afterDelay"
+	}
+}
