@@ -1,0 +1,12 @@
+table {
+    margin: 10px;
+}
+table tr {
+    border-bottom: 1px solid gray;
+}
+table tr td, table tr th {
+    padding: 4px;
+}
+table td img {
+    width: 40px;
+}

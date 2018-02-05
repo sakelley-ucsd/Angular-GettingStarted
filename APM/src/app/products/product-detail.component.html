@@ -2,6 +2,28 @@
   <div class='panel-heading'>
     {{pageTitle + ': ' + product.productName}}
   </div>
+  <div>
+    <table>
+      <tbody>
+        <tr><th>productId</th><td>{{ product.productId }}</td></tr>
+        <tr><th>productName</th><td>{{ product.productName }}</td></tr>
+        <tr><th>productCode</th><td>{{ product.productCode }}</td></tr>
+        <tr><th>releaseDate</th><td>{{ product.releaseDate }}</td></tr>
+        <tr><th>description</th><td>{{ product.description }}</td></tr>
+        <tr><th>price</th><td>{{ product.price }}</td></tr>
+        <tr><th>starRating</th><td style="display:inline;">
+            <span>{{ product.starRating }}</span>
+            <pm-star [rating]='product.starRating'
+              (ratingClicked)='onRatingClicked($event)'>
+            </pm-star>
+            </td></tr>
+        <tr><th>image</th><td>
+          <img [src]='product.imageUrl'
+            [title]='"Picture of " + product.productName'>
+          </td></tr>
+      </tbody>
+    </table>
+  </div>
   <div class='panel-footer'>
     <a class='btn btn-default' (click)='onBack()' style='width:80px'>
       <i class='glyphicon glyphicon-chevron-left'></i> Back
